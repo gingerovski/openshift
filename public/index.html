@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="scotchTodo">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,300,500' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styl.css" type="text/css">
+
+    <title>Node/Angular Todo App</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+
+    <!-- SPELLS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script><!-- load angular -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+
+</head>
+<body ng-controller="ListCtrl">
+<div class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">GingerApp</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="mynavbar-content">
+      <ul class="nav navbar-nav" id="menu">
+        <li><a href="#" class="menus">Lista</a></li>
+        <li><a href="#dodaj" class="menus">Dodaj artykuł</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" class="menus">Liczba artykułów <span class="label label-default">{{ todos.length }}</span></a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>
+<!--             PODSTRONY              -->
+<div ng-view></div>
+{{message}}
+    <script src="core.js"></script>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>

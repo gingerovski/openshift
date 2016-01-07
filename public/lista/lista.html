@@ -1,0 +1,43 @@
+
+<div class="container" >
+<div class="row">
+        <div class="col-sm-12">
+        
+        <!-- LOOP OVER THE TODOS IN $scope.todos -->
+            <div ng-repeat="todo in todos | orderBy:'_id':true">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <span id="tytulowy">{{ todo.nazw }}</span>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="pull-right btn btn-danger btn-xs" type="submit" ng-click="deleteTodo(todo._id)"><i class="fa fa-times fa-1"></i></button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="container"><div class="row">
+                            <div class="col-sm-12 text-justify">
+                                <p class="text-justify">{{ todo.stan }}</p>
+                            </div>
+                            <div class="col-sm-12 text-right">
+                                <br />
+                                {{ todo.zarobki }}
+                            </div>
+                            </div></div>
+                        </div>
+                        
+                        <div class="panel-footer">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- FORM TO CREATE TODOS -->
+
+    </div>

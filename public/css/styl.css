@@ -1,0 +1,19 @@
+body{
+	padding:0px; 
+	font-family: 'Ubuntu', sans-serif;
+	background-color:#330033;
+	background-image: url("../img/tlo2.jpg");
+	background-position: fixed;
+	;}
+
+html                    { overflow-y:scroll; }
+        
+span                    { font-family: 'Ubuntu', sans-serif; }
+#todo-list              { margin-bottom:30px; }
+
+#tytulowy{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	font-weight:500;
+	margin-top: 30px;
+}
